@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Visma.Fagsamling.Business;
+using Visma.Fagsamling.Domain;
 using Visma.Fagsamling.Domain.Interfaces;
 using Visma.Fagsamling.External.Interfaces;
 using Visma.Fagsamling.External.Oslobysykkel;
@@ -30,9 +32,14 @@ namespace Visma.Fagsamling.Web
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddHttpClient(Constants.HttpClients.OsloBysykkelClient, client =>
+            {
+                throw new Exception("Legg til nøkkel for Oslo bysykkel");
+                client.DefaultRequestHeaders.Add("Client-Identifier", "<Key>");
+                client.BaseAddress = new Uri("https://oslobysykkel.no/api/v1/");
+            });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddScoped<IOslobysykkelHttpClientFactory, OslobysykkelHttpClientFactory>();
             services.AddScoped<IOslobysykkelClient, OslobysykkelClient>();
             services.AddScoped<IStationLogic, StationLogic>();
         }

@@ -3,6 +3,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Visma.Fagsamling.Domain;
 using Visma.Fagsamling.Domain.Models;
 using Visma.Fagsamling.External.Interfaces;
 using Visma.Fagsamling.External.Oslobysykkel.Models;
@@ -13,9 +14,9 @@ namespace Visma.Fagsamling.External.Oslobysykkel
     {
         private readonly HttpClient _httpClient;
 
-        public OslobysykkelClient(IOslobysykkelHttpClientFactory httpClient)
+        public OslobysykkelClient(IHttpClientFactory httpClientFactory)
         {
-            _httpClient = httpClient.Create();
+            _httpClient = httpClientFactory.CreateClient(Constants.HttpClients.OsloBysykkelClient);
         }
 
         public async Task<List<BikeStation>> GetBikeStations()
