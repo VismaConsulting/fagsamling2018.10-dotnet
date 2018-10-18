@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Visma.Fagsamling.Integrations\Visma.Fagsamling.External.csproj" />
+    <ProjectReference Include="..\Visma.Fagsamling.Models\Visma.Fagsamling.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

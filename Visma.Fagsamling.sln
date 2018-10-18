@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10 Frontend", "10 Frontend", "{A61A7E1C-2142-40E3-AB23-DCC7A53C9416}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30 Data access", "30 Data access", "{AE85BAE6-EB26-4884-83A4-70CE94226196}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Visma.Fagsamling.Web", "Visma.Fagsamling.Web\Visma.Fagsamling.Web.csproj", "{14045D00-8B50-4F69-B602-F3793E9BEFC4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Visma.Fagsamling.External", "Visma.Fagsamling.Integrations\Visma.Fagsamling.External.csproj", "{89A3CFA7-13CD-4717-BBC8-9BC256EB70EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Visma.Fagsamling.Domain", "Visma.Fagsamling.Models\Visma.Fagsamling.Domain.csproj", "{B826589F-4B48-48FD-BF5B-66700F5C58F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "40 Domain", "40 Domain", "{D4A2BAE4-335E-495A-A14F-3910B065E7F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20 Business", "20 Business", "{23FF06D0-AB94-4035-89D8-D985DA5DCDF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visma.Fagsamling.Business", "Visma.Fagsamling.Business\Visma.Fagsamling.Business.csproj", "{97F28F84-6DBB-4B85-BD95-27E34B489A4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14045D00-8B50-4F69-B602-F3793E9BEFC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14045D00-8B50-4F69-B602-F3793E9BEFC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14045D00-8B50-4F69-B602-F3793E9BEFC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14045D00-8B50-4F69-B602-F3793E9BEFC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89A3CFA7-13CD-4717-BBC8-9BC256EB70EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89A3CFA7-13CD-4717-BBC8-9BC256EB70EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89A3CFA7-13CD-4717-BBC8-9BC256EB70EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89A3CFA7-13CD-4717-BBC8-9BC256EB70EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B826589F-4B48-48FD-BF5B-66700F5C58F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B826589F-4B48-48FD-BF5B-66700F5C58F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B826589F-4B48-48FD-BF5B-66700F5C58F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B826589F-4B48-48FD-BF5B-66700F5C58F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97F28F84-6DBB-4B85-BD95-27E34B489A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97F28F84-6DBB-4B85-BD95-27E34B489A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97F28F84-6DBB-4B85-BD95-27E34B489A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97F28F84-6DBB-4B85-BD95-27E34B489A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{14045D00-8B50-4F69-B602-F3793E9BEFC4} = {A61A7E1C-2142-40E3-AB23-DCC7A53C9416}
+		{89A3CFA7-13CD-4717-BBC8-9BC256EB70EA} = {AE85BAE6-EB26-4884-83A4-70CE94226196}
+		{B826589F-4B48-48FD-BF5B-66700F5C58F6} = {D4A2BAE4-335E-495A-A14F-3910B065E7F5}
+		{97F28F84-6DBB-4B85-BD95-27E34B489A4A} = {23FF06D0-AB94-4035-89D8-D985DA5DCDF8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C58B5A1D-50A7-40DF-9555-F7DDCBE4686C}
+	EndGlobalSection
+EndGlobal
