@@ -1,6 +1,6 @@
 ﻿using System.Net.Http;
 
-namespace Visma.Fagsamling.External.Interfacs
+namespace Visma.Fagsamling.External.Interfaces
 {
     public interface IOslobysykkelHttpClientFactory
     {

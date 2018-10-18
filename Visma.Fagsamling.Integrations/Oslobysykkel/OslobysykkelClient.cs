@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Visma.Fagsamling.Domain.Models;
-using Visma.Fagsamling.External.Interfacs;
+using Visma.Fagsamling.External.Interfaces;
 using Visma.Fagsamling.External.Oslobysykkel.Models;
 
 namespace Visma.Fagsamling.External.Oslobysykkel

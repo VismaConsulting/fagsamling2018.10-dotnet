@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Visma.Fagsamling.Domain.Models;
 
-namespace Visma.Fagsamling.External.Interfacs
+namespace Visma.Fagsamling.External.Interfaces
 {
     public interface IOslobysykkelClient
     {
