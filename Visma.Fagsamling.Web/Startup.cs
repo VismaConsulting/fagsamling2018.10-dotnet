@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Visma.Fagsamling.Business;
 using Visma.Fagsamling.Domain.Interfaces;
-using Visma.Fagsamling.External.Interfacs;
+using Visma.Fagsamling.External.Interfaces;
 using Visma.Fagsamling.External.Oslobysykkel;
 
 namespace Visma.Fagsamling.Web

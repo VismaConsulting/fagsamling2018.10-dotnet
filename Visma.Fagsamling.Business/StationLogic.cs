@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Visma.Fagsamling.Domain.Interfaces;
 using Visma.Fagsamling.Domain.Models;
-using Visma.Fagsamling.External.Interfacs;
+using Visma.Fagsamling.External.Interfaces;
 
 namespace Visma.Fagsamling.Business
 {

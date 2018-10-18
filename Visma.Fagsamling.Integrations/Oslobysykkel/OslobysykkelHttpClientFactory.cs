@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Net.Http;
-using Visma.Fagsamling.External.Interfacs;
+using Visma.Fagsamling.External.Interfaces;
 
 namespace Visma.Fagsamling.External.Oslobysykkel
 {
