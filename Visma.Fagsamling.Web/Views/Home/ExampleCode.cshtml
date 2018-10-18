@@ -1,0 +1,26 @@
+﻿@using Visma.Fagsamling.Domain.Models
+@{
+    ViewData["Title"] = "Example";
+    List<BikeStation> stations = ViewData["Stations"] as List<BikeStation>;
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Stasjonnavn</th>
+            <th scope="col">Sykkler</th>
+            <th scope="col">Låser</th>
+            <th scope="col">Totalt antall låser</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var station in stations)
+    {
+        <tr>
+            <td>@station.Title</td>
+            <td>@station.Bikes</td>
+            <td>@station.Locks</td>
+            <td>@station.TotalNumberOfLocks</td>
+        </tr>
+    }
+    </tbody>
+</table>

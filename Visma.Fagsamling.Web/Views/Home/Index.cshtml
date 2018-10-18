@@ -1,29 +1,14 @@
 ﻿@using Visma.Fagsamling.Domain.Models
 @{
-    ViewData["Title"] = "Home Page";
-    List<BikeStation> stations = ViewData["Stations"] as List<BikeStation>;
+    ViewData["Title"] = "Informasjon";
+
 }
 
-
-<table class="table">
-    <thead>
-    <tr>
-        <th scope="col">Stasjonnavn</th>
-        <th scope="col">Sykkler</th>
-        <th scope="col">Låser</th>
-        <th scope="col">Totalt antall låser</th>
-    </tr>
-    </thead>
-    <tbody>
-    @foreach (var station in stations)
-    {
-        <tr>
-            <td>@station.Title</td>
-            <td>@station.Bikes</td>
-            <td>@station.Locks</td>
-            <td>@station.TotalNumberOfLocks</td>
-        </tr>
-    }
-    </tbody>
-</table>
-
+<div class="jumbotron">
+    <h2>Info</h2>
+    <ul class="list-group">
+        <li class="list-group-item"><a class="navbar-link" href="https://developer.oslobysykkel.no/api" target="_blank">API over bysykler i OSLO</a></li>
+        <li class="list-group-item"><a class="navbar-link" href="https://api.entur.org" target="_blank">API over reiseplanlegger, tidstabeller fra bla Ruter</a></li>
+        <li class="list-group-item"><a class="navbar-link" href="https://developers.google.com/maps/documentation/geolocation/intro" target="_blank">Geolocation API</a></li>
+    </ul>
+</div>
