@@ -9,10 +9,12 @@ namespace Visma.Fagsamling.Web.Controllers
     public class HomeController : Controller
     {
         private readonly IStationLogic _client;
+        private readonly ITripLogic _tripLogic;
 
-        public HomeController(IStationLogic client)
+        public HomeController(IStationLogic client, ITripLogic tripLogic)
         {
             _client = client;
+            _tripLogic = tripLogic;
         }
 
         public async Task<IActionResult> Index()
@@ -24,6 +26,12 @@ namespace Visma.Fagsamling.Web.Controllers
         {
             var stations = await _client.GetBikeStation();
             ViewData["Stations"] = stations;
+            return View();
+        }
+
+        public async Task<IActionResult> ExampleCode2()
+        {
+            ViewData["Duration"] = (await _tripLogic.GetTripDuration("Jernbanetorget", "Nationaltheatret")) / 60;
             return View();
         }
 
